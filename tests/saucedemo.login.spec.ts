@@ -20,6 +20,4 @@ test('locked out login', async ({ page }) => {
   // Assert that an error message is displayed
   const errorMessage = await loginPage.getErrorMessage();
   expect(errorMessage).toBe('Epic sadface: Sorry, this user has been locked out.');
-
-  console.log(test);
 });
